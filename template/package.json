@@ -1,0 +1,72 @@
+{
+  "name": "<%= name %>",
+  "version": "0.1.0",
+  "description": "<%= description %>",
+  "main": "dist/index.common.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist",
+    "examples",
+    "src",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "dev": "docz dev",
+    "start:doc": "docz build && docz serve",
+    "build:package": "rollup -c",
+    "build:doc": "docz build",
+    "ghpages": "npm run build:doc && gh-pages -d .docz/dist",
+    "lint": "eslint '{src,docs,examples,__test__}/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix '{src,docs,examples,__test__}/**/*.{ts,tsx}'",
+    "test": "jest"
+  },
+  "keywords": [
+    "<%= libName %>",
+    "typescript",
+    "library"
+  ],
+  "author": "<%- author %>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^2.0.1",
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "docz": "^2.2.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "gatsby-plugin-less": "^3.0.14",
+    "gh-pages": "^2.1.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.27.8",
+    "ts-jest": "^24.2.0"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%- user %>/<%= name %>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%- user %>/<%= name %>/issues"
+  },
+  "homepage": "https://github.com/<%- user %>/<%= name %>"
+}
