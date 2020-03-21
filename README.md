@@ -1,12 +1,11 @@
 # typescript
 
-typescript template for [libox](https://github.com/heynext/libox).
+typescript for [libox](https://github.com/heynext/libox).
 
 ## 使用
 
-``` bash
-$ npm i -g libox
-$ libox init <dir>
+```bash
+$ npx libox init <dir>
 ```
 
 ## 特性
@@ -14,5 +13,5 @@ $ libox init <dir>
 - TypeScript
 - ESLint + Prettie
 - Jest
-- Docz
-- rollup
+- Dumi
+- father
