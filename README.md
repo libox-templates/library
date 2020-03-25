@@ -1,6 +1,6 @@
-# typescript
+# library template
 
-typescript for [libox](https://github.com/heynext/libox).
+library template for [libox](https://github.com/heynext/libox).
 
 ## 使用
 

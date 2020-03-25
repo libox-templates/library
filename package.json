@@ -1,7 +1,7 @@
 {
-  "name": "typescript",
+  "name": "library",
   "version": "1.0.0",
-  "description": "typescript template for [libox](https://github.com/heynext/libox).",
+  "description": "library template for [libox](https://github.com/heynext/libox).",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/libox-templates/typescript.git"
+    "url": "git+https://github.com/libox-templates/library.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/libox-templates/typescript/issues"
+    "url": "https://github.com/libox-templates/library/issues"
   },
-  "homepage": "https://github.com/libox-templates/typescript#readme",
+  "homepage": "https://github.com/libox-templates/library#readme",
   "devDependencies": {
     "@types/ejs": "^3.0.1",
     "@types/fs-extra": "^8.1.0",
