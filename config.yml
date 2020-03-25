@@ -1,0 +1,27 @@
+ejsFiles:
+  - package.json
+  - .umirc.ts
+  - LICENSE
+  - README.md
+  - README_EN.md
+  - src/index.ts
+  - examples/basis.tsx
+  - docs/index.md
+prompts:
+  - name: name
+    type: input
+    message: 项目名
+    default: "{{basename}}"
+  - name: libName
+    type: input
+    message: 库名
+    default: "{{name | camel}}"
+  - name: description
+    type: input
+    message: 描述
+    default: "{{libName}}"
+  - name: author
+    type: input
+    message: 作者
+    format: authorSplit
+    default: "{{defaultUser | authorJoin}}"
